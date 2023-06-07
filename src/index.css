@@ -1,0 +1,233 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	user-select: none;
+	height: 100vh;
+}
+
+.app {
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.scenarios__screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0.2rem;
+}
+
+.scenarios__screen__buttons {
+	display: flex;
+	width: 32em;
+	justify-content: space-evenly;
+	padding: 0.3rem;
+}
+
+.app__screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+button {
+	width: 3rem;
+	padding: 0.2rem;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	border: 1px solid #e7e7e7;
+	background-color: #e7e7e7;
+	border-radius: 3px;
+}
+
+button:hover {
+	background-color: white;
+}
+
+img {
+	width: 37.5rem;
+	height: 32rem;
+	flex: 2;
+}
+
+.floors__screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 29em;
+	flex: 1;
+}
+
+.floors__screen button {
+	margin-top: 10px;
+}
+
+/* .LED_direction_view {
+	color: #fff;
+	text-shadow: 1px 1px 1px black;
+	margin-bottom: 10px;
+	width: 194px;
+}
+
+.LED_direction_view_up,
+.LED_direction_view_down {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.LED_direction_view_sides {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.LED_direction_view_right,
+.LED_direction_view_left {
+	position: relative;
+}
+
+.arrow {
+	height: 4rem;
+	width: 4rem;
+	color: #00ff00;
+}
+
+.LED_direction_view_up p {
+	transform: rotate(-90deg);
+	position: absolute;
+	bottom: 35%;
+}
+
+.LED_direction_view_right p {
+	transform: rotate(0deg);
+	position: absolute;
+	top: 35%;
+	right: 35%;
+}
+
+.LED_direction_view_left p {
+	transform: rotate(0deg);
+	position: absolute;
+	top: 35%;
+	left: 35%;
+}
+
+.LED_direction_view_down p {
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 35%;
+} */
+
+.directions-view-screen {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 29em;
+}
+
+.directions-view-screen__arrows {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.arrow {
+	height: 70px;
+	width: 70px;
+}
+
+.wrapper {
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.sensor {
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 50px;
+	position: absolute;
+	margin: auto;
+	cursor: pointer;
+}
+
+.arrow__screen {
+	width: 3px;
+	height: 10px;
+	background-color: rgb(127, 127, 127);
+	cursor: pointer;
+	position: absolute;
+	margin: auto;
+}
+
+.exit__pathway {
+	position: absolute;
+	margin: auto;
+	cursor: pointer;
+	color: green;
+}
+
+.lamp {
+	width: 8px;
+	height: 8px;
+	border: 1px solid black;
+	border-radius: 50px;
+	position: absolute;
+	margin: auto;
+	background-color: white;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.pos-absolute {
+	position: absolute;
+}
+
+.pos-up-arrow {
+	top: 25px;
+	right: 0px;
+	bottom: 0px;
+	left: 25px;
+	color: #fff;
+}
+
+.pos-right-arrow {
+	top: 26px;
+	right: 0px;
+	bottom: 0px;
+	left: 75px;
+	color: #fff;
+}
+
+.pos-down-arrow {
+	top: 28px;
+	right: 0px;
+	bottom: 0px;
+	left: 25px;
+	color: #fff;
+}
+
+.pos-left-arrow {
+	top: 26px;
+	right: 0px;
+	bottom: 0px;
+	left: 196px;
+	color: #fff;
+}
+
+.text-shadow {
+	text-shadow: 1px 1px 1px black;
+}
